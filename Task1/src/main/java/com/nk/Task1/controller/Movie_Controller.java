@@ -61,11 +61,5 @@ public class Movie_Controller{
 		List<SumVotesDTO> top10MoviesList = moviesService.calculateVotes(); //getting movies
 		return new ResponseEntity<List<SumVotesDTO>>(top10MoviesList,HttpStatus.OK); //returning movies
 	}
-	
-	
-	
-	
-	
-	
-	
+
 }
