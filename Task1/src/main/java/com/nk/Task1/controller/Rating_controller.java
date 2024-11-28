@@ -22,7 +22,6 @@ public class Rating_controller {
 	@GetMapping("/top-rated-movies")
 	public ResponseEntity<List<TopRatedMovieDto>> getTop10MoviesHandler(){
 		List<TopRatedMovieDto> top10MoviesList = rating_Service.findTopRatedMovies(); //getting movies list
-//		System.out.println(top10MoviesList);
 		return new ResponseEntity<List<TopRatedMovieDto>>(top10MoviesList,HttpStatus.OK); // returning
 	}
 
